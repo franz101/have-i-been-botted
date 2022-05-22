@@ -1,0 +1,41 @@
+{
+  "name": "create-react-app-with-typescript",
+  "version": "5.0.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint-plugin-import": "^2.26.0",
+    "graphql": "^16.5.0",
+    "graphql-hooks": "^5.11.3",
+    "graphql-request": "^4.2.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "latest",
+    "react-wordcloud": "^1.2.7",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "NODE_ENV=dev react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
