@@ -4,6 +4,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import App from "./App";
 import Explorer from "./routes/Explorer";
+import Enterprise from "./routes/Enterprise";
 import Checker from "./routes/Checker";
 import Home from "./routes/Home";
 import theme from "./theme";
@@ -19,6 +20,7 @@ root.render(
     <BrowserRouter basename="/have-i-been-botted/">
       <Routes>
         <Route element={<App />}>
+          <Route path="/enterprise" element={<Enterprise />} />
           <Route path="/" element={<Home />} />
           <Route path="explorer">
             <Route index element={<Checker />} />

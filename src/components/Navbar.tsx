@@ -16,7 +16,7 @@ export const NavBar = () => {
       <Button
         component={RouterLink}
         color="primary"
-        to="#"
+        to="enterprise"
         sx={{ my: 1, mx: 1.5 }}
       >
         Enterprise
