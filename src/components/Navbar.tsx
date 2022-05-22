@@ -1,33 +1,34 @@
-import { Link } from "@mui/material";
+import { Link, Button } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import React from "react";
 
 export const NavBar = () => {
   return (
     <nav>
-      <Link
-        variant="button"
-        color="text.primary"
-        href="/explorer"
+      <Button
+        component={RouterLink}
+        color="primary"
+        to="/explorer"
         sx={{ my: 1, mx: 1.5 }}
       >
         Explorer
-      </Link>
-      <Link
-        variant="button"
-        color="text.primary"
-        href="#"
+      </Button>
+      <Button
+        component={RouterLink}
+        color="primary"
+        to="#"
         sx={{ my: 1, mx: 1.5 }}
       >
         Enterprise
-      </Link>
-      <Link
-        variant="button"
-        color="text.primary"
-        href="mailto:father@duck.com"
+      </Button>
+      <Button
+        component={RouterLink}
+        color="primary"
+        to="mailto:father@duck.com"
         sx={{ my: 1, mx: 1.5 }}
       >
         Support
-      </Link>
+      </Button>
     </nav>
   );
 };
