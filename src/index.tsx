@@ -18,7 +18,7 @@ root.render(
     <CssBaseline />
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route element={<App />}>
           <Route path="/" element={<Home />} />
           <Route path="explorer">
             <Route index element={<Checker />} />
