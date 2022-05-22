@@ -1,6 +1,7 @@
 {
   "name": "create-react-app-with-typescript",
   "version": "5.0.0",
+  "homepage": "https://franz101.github.io/have-i-been-botted/",
   "private": true,
   "dependencies": {
     "@emotion/react": "latest",
