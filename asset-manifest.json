@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/have-i-been-botted/static/js/main.70636988.js",
+    "main.js": "/have-i-been-botted/static/js/main.b8c9e34d.js",
     "index.html": "/have-i-been-botted/index.html",
-    "main.70636988.js.map": "/have-i-been-botted/static/js/main.70636988.js.map"
+    "main.b8c9e34d.js.map": "/have-i-been-botted/static/js/main.b8c9e34d.js.map"
   },
   "entrypoints": [
-    "static/js/main.70636988.js"
+    "static/js/main.b8c9e34d.js"
   ]
 }
