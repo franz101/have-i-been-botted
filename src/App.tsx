@@ -1,75 +1,45 @@
-import { Copyright } from "@mui/icons-material";
-import {
-  GlobalStyles,
-  CssBaseline,
-  AppBar,
-  Toolbar,
-  Typography,
-  Container,
-  Grid,
-} from "@mui/material";
-import * as React from "react";
-import { Outlet, Link } from "react-router-dom";
-import { NavBar } from "./components/Navbar";
+import React from "react";
 import * as config from "./content/config";
-import { footers } from "./content/footer";
+import { Outlet, Link } from "react-router-dom";
+import {
+  Background,
+  Wrapper,
+  Title,
+  Marquee,
+  MarqueeContent,
+} from "./components/ui";
+import { Grid, VStack, Code, Text, Box } from "@chakra-ui/react";
 
 export default function App() {
   return (
     <React.Fragment>
-      <GlobalStyles
-        styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
-      />
-      <CssBaseline />
-      <AppBar
-        position="static"
-        color="default"
-        elevation={0}
-        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
-      >
-        <Toolbar sx={{ flexWrap: "wrap" }}>
-          <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-              {config.siteTitle}
-            </Link>
-          </Typography>
+      <Background>
+        <Box textAlign="center" fontSize="xl">
+          <Grid minH="100vh" p={3}>
+            <VStack spacing={8}>
+              <Wrapper>
+                <Title>zkMEV: Return of the Mempool</Title>
+                <Marquee>
+                  <MarqueeContent>
+                    Once upon a time in a blockchain
+                  </MarqueeContent>
+                </Marquee>
+              </Wrapper>
+              <img src="./assets/divider.png" width="500px" />
+              <Outlet />
+              <img src="./assets/guestbook.gif" width="50px" />
 
-          <NavBar />
-        </Toolbar>
-      </AppBar>
-      {/* Hero unit */}
-      <Container maxWidth="md" component="main">
-        <Outlet />
-      </Container>
-      {/* Footer */}
-      <Container
-        maxWidth="md"
-        component="footer"
-        sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          mt: 8,
-          py: [3, 6],
-        }}
-      >
-        <Grid container spacing={4} justifyContent="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="text.primary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item: any) => (
-                  <li key={item?.name || item}>
-                    <Link to={item?.name || "#"} color="text.secondary">
-                      {item?.name || item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
+              <a
+                href="https://twitter.com/filmfranz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Write in guestbook
+              </a>
+            </VStack>
+          </Grid>
+        </Box>
+      </Background>
     </React.Fragment>
   );
 }

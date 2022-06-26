@@ -1,4 +1,12 @@
-# Create React App example with TypeScript
+# zk MEV
+
+Our project came out the idea to use historic data analysis for trustscores. The idea: To participate in an auction, you have to stake money. If your account participates in executing a sandwich trade. You will loose your stake. Therefore MEV would not be as profitable. Given the timing of zk advances our ultimate goal was to implement Vitalik's latest post on privacy applications and make the score private.
+
+We started with a negative reputation score by wash trade participation. And ultimately explored both the attack and defense side of NFT marketplace.
+
+We proposed a sniping bot, that would be paid on chain in advance and if the NFT wouldn't get bought in a specific time frame, the money will be returned. We put a lot of effort to make the solidity contract a multi-bidder contract.
+
+Given we understood the nature of sniping bots, we came up with modules that we could attach to SeaPorts latest api. To actually, block these bots.
 
 ## How to use
 
@@ -23,20 +31,3 @@ or:
 <!-- #default-branch-switch -->
 
 [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/create-react-app-with-typescript)
-
-<!-- #default-branch-switch -->
-
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/create-react-app-with-typescript)
-
-## The idea behind the example
-
-This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app) with [TypeScript](https://github.com/Microsoft/TypeScript).
-It includes `@mui/material` and its peer dependencies, including `emotion`, the default style engine in MUI v5.
-If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/material-ui/getting-started/templates/) section.
